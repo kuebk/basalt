@@ -1,0 +1,16 @@
+{
+  "name": "BSON.js",
+  "description": "A fast, simple BSON parser for Node",
+  "keywords": ["bson", "parser", "json", "extension", "document", "native"],
+  "version": "1.0.0",
+  "homepage": "http://github.com/philipaconrad/cedar",
+  "repository": "git://github.com/philipaconrad/cedar.git",
+  "author": "Aleksander Williams <alekswilliams@earthlink.net>",
+  "contributors": "Philip Conrad <philipaconrad@gmail.com>",
+  "main": "lib/bson.js",
+  "private": true,
+  "scripts": {"preinstall": "node-gyp clean || true; node-gyp configure build"},
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": { "node": "*" }
+}
