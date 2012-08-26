@@ -1,8 +1,12 @@
-## BSON.js
+## basalt
 
 A fast, simple BSON parser for Node, available as an addon or as a (slower) pure
 Javascript variant. The addon is approximately 10x faster than the pure JS version.
 There are no external dependencies.
+
+## NPM Install
+
+    npm install basalt
 
 ## Building
 

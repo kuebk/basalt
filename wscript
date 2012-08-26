@@ -1,3 +1,4 @@
+#deprecated. DO NOT USE.
 import Options
 from os import unlink, symlink, popen
 from os.path import exists, abspath
