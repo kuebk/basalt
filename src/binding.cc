@@ -8,10 +8,15 @@
 
 using namespace v8;
 
-extern "C" void
-init (Handle<Object> target) {
+extern "C" {
+
+void init (Handle<Object> target) {
     HandleScope scope;
     InitEncoder(target);
     InitDecoder(target);
     InitTypes(target);
 }
+
+}
+
+NODE_MODULE(binding, init);

@@ -177,7 +177,7 @@ inline void encodeObjectToken(bson_generator *bb, const char *name, const Local<
         Local<Value> elem;
         if (prop->IsFunction()) {
             Handle<Function> fn = Handle<Function>::Cast(prop);
-            Local<Value> argv[0];
+            Local<Value> argv[1];	//edit to get code to compile. Philip Conrad -- 8/25/2012@4:04PM
             elem = fn->Call(obj, 0, argv);
         } else {
             elem = prop;
