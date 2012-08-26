@@ -6,9 +6,13 @@ There are no external dependencies.
 
 ## Building
 
-In the project directory:
+In the project directory enter:
 
-    node-waf configure build
+    node-gyp configure
+
+Then enter:
+
+    node-gyp build
 
 ## Usage
 
@@ -32,3 +36,9 @@ more robust error handling. Have a look at /test and /benchmarks for more detail
 
 In my branch of node-mongodb-native I'm seeing a 5-7x increase in performance
 with the addon variant.
+
+## Compilation/Build Notes
+
+Currently, this library only builds reliably on Win32.
+
+A Linux build is in the works, and potentially a Mac build as well.
