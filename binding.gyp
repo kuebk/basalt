@@ -18,7 +18,6 @@
 		},
 		{
 			"target_name": "binding",
-			"type": "shared_library",
 			"include_dirs": [ "deps/bson" ],
 			"defines": [ "USE__INT64=1" ],
 			"sources": [
@@ -30,6 +29,7 @@
 			],
 			"conditions": [
 				["OS=='win'", {
+					"type": "shared_library",
 					"cppflags": [ "-O3", "-g" ],
 					"cflags": [
 						"-fPIC", "-Wall" ,"-ansi", "-pedantic"
@@ -46,6 +46,9 @@
 						},
 					],
 				}],
+				["OS=='linux'", {
+					"cflags_cc!": ["-fno-exceptions"]
+				}]
 			],
 		},
 	]
